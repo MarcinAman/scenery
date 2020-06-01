@@ -25,17 +25,16 @@ class UniformBSpline(protected val controlPoints: ArrayList<Vector3f>, val n: In
      * This is a list of the equidistant parameters at which the curve is calculated.
      */
     private val tList = ArrayList<Vector4f>(n+1)
-
     /**
      * Computes the actual tList.
      */
-    private fun calculateT() {
+    init {
         for(i in 0..n) {
             val t = i/n.toFloat()
             val tVector = Vector4f((1-t)*(1-t)*(1-t)/6,
-                    (3*t*t*t - 6*t*t +4)/6,
-                    (-3*t*t*t + 3*t*t + 3*t +1)/6,
-                    t*t*t/6)
+                (3*t*t*t - 6*t*t +4)/6,
+                (-3*t*t*t + 3*t*t + 3*t +1)/6,
+                t*t*t/6)
             tList.add(tVector)
         }
     }
@@ -53,7 +52,6 @@ class UniformBSpline(protected val controlPoints: ArrayList<Vector3f>, val n: In
             ArrayList()
         }
         else {
-            calculateT()
             val curvePoints = ArrayList<Vector3f>((controlPoints.size - 3) * n + 1)
             controlPoints.dropLast(3).forEachIndexed { index, _ ->
                 val spline = partialSpline(controlPoints[index], controlPoints[index + 1],
@@ -69,10 +67,10 @@ class UniformBSpline(protected val controlPoints: ArrayList<Vector3f>, val n: In
      */
     private fun partialSpline(p1: Vector3f, p2: Vector3f, p3: Vector3f, p4: Vector3f): ArrayList<Vector3f> {
         val pointMatrix = Matrix4f(
-                p1.x(), p1.y(), p1.z(), 0f,
-                p2.x(), p2.y(), p2.z(), 0f,
-                p3.x(), p3.y(), p3.z(), 0f,
-                p4.x(), p4.y(), p4.z(), 0f)
+            p1.x(), p1.y(), p1.z(), 0f,
+            p2.x(), p2.y(), p2.z(), 0f,
+            p3.x(), p3.y(), p3.z(), 0f,
+            p4.x(), p4.y(), p4.z(), 0f)
         val partialSpline = ArrayList<Vector3f>(n)
         tList.forEach {
             val vec = Vector4f(it)
