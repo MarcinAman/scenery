@@ -1,5 +1,6 @@
 package graphics.scenery
 
+import graphics.scenery.geometry.Mesh
 import org.joml.Vector3f
 import java.util.*
 import kotlin.math.PI

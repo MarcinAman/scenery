@@ -2,6 +2,7 @@ package graphics.scenery
 
 import graphics.scenery.backends.Renderer
 import graphics.scenery.fonts.SDFFontAtlas
+import graphics.scenery.geometry.Mesh
 import graphics.scenery.textures.Texture
 import graphics.scenery.textures.Texture.RepeatMode
 import org.joml.Vector2i

@@ -1,6 +1,7 @@
 package graphics.scenery
 
 import graphics.scenery.backends.Shaders
+import graphics.scenery.geometry.Mesh
 
 /**
  * Class for rendering infinite planes.
