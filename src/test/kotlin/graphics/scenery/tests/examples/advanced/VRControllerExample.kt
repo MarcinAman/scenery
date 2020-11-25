@@ -6,6 +6,7 @@ import graphics.scenery.backends.Renderer
 import graphics.scenery.controls.OpenVRHMD
 import graphics.scenery.controls.TrackedDeviceType
 import graphics.scenery.numerics.Random
+import graphics.scenery.primitives.Box
 import org.junit.Test
 import kotlin.concurrent.thread
 

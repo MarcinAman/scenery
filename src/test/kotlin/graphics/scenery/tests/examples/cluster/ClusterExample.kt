@@ -7,10 +7,10 @@ import graphics.scenery.controls.InputHandler
 import graphics.scenery.controls.TrackedStereoGlasses
 import graphics.scenery.net.NodePublisher
 import graphics.scenery.net.NodeSubscriber
+import graphics.scenery.primitives.Box
 import graphics.scenery.volumes.Volume
 import org.junit.Test
 import org.scijava.ui.behaviour.ClickBehaviour
-import java.nio.file.Path
 import java.nio.file.Paths
 import kotlin.concurrent.thread
 

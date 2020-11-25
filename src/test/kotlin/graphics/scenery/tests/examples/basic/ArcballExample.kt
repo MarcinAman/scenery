@@ -4,11 +4,11 @@ import org.joml.Vector3f
 import graphics.scenery.*
 import graphics.scenery.backends.Renderer
 import graphics.scenery.numerics.Random
+import graphics.scenery.primitives.Box
 import graphics.scenery.textures.Texture
 import graphics.scenery.utils.Image
 import org.junit.Test
 import org.scijava.ui.behaviour.ClickBehaviour
-import kotlin.concurrent.thread
 
 /**
  * This example demonstrates how to use the TargetArcBallBehaviour and how
