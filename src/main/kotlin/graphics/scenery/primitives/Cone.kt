@@ -1,5 +1,6 @@
-package graphics.scenery
+package graphics.scenery.primitives
 
+import graphics.scenery.BufferUtils
 import graphics.scenery.geometry.Mesh
 import graphics.scenery.utils.extensions.minus
 import graphics.scenery.utils.extensions.plus
