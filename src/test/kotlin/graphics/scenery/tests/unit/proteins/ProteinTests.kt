@@ -1,6 +1,6 @@
-package graphics.scenery.tests.unit
+package graphics.scenery.tests.unit.proteins
 
-import graphics.scenery.*
+import graphics.scenery.proteins.Protein
 import graphics.scenery.utils.LazyLogger
 import org.junit.Test
 import kotlin.test.assertFails
