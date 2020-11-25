@@ -1,6 +1,6 @@
-package graphics.scenery.tests.unit
+package graphics.scenery.tests.unit.geometry
 
-import graphics.scenery.CatmullRomSpline
+import graphics.scenery.geometry.CatmullRomSpline
 import graphics.scenery.numerics.Random
 import graphics.scenery.utils.LazyLogger
 import org.joml.Vector3f

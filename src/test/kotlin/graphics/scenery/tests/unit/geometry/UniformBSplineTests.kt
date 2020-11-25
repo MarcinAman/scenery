@@ -1,8 +1,8 @@
-package graphics.scenery.tests.unit
+package graphics.scenery.tests.unit.geometry
 
 import org.joml.*
 import graphics.scenery.numerics.Random
-import graphics.scenery.*
+import graphics.scenery.geometry.UniformBSpline
 import graphics.scenery.utils.LazyLogger
 import org.junit.Test
 import kotlin.math.roundToInt
